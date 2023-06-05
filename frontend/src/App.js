@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Container, Stack } from "react-bootstrap";
+import { Container, Stack, } from "react-bootstrap";
 
 import InputImage from "./InputImage";
 import Output from "./Output";
