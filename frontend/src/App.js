@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { Container, Stack, } from "react-bootstrap";
+import { Container, Stack, Navbar } from "react-bootstrap";
+import { MdOutlineImageSearch } from "react-icons/md";
 
 import InputImage from "./InputImage";
 import Output from "./Output";
@@ -10,6 +11,15 @@ function App() {
 
   return (
     <div>
+      <Navbar bg="dark" variant="dark">
+        <Navbar.Brand style={{display: "flex", alignItems: "center" }}>
+          <MdOutlineImageSearch style={{
+            marginLeft: "12px",
+            marginRight: "8px"
+          }} />
+          Image Recognition App
+        </Navbar.Brand>
+      </Navbar>
       <Container>
         <div className="mt-3" />
         <Stack gap={2}>
